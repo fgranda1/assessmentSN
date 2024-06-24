@@ -11,7 +11,7 @@ const tool_Id = pm.collectionVariables.get('ToolId');
 //Iterating the json using foreach() and creating a greade item for each folder element
 flds.forEach(function(f) {
   const payload = {
-    url: 'https://your-brightspace-instance-url/d2l/api/le/1.67/' + org_unit_id + '/grades/',
+    url: 'https://brightspace-instance.com/d2l/api/le/1.67/' + org_unit_id + '/grades/',
     method: 'POST',
     header: {
       'Authorization': 'Bearer ' + access_token,
